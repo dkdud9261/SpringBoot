@@ -39,7 +39,7 @@ dependencies {
     implementation 'mysql:mysql-connector-java'
     implementation "com.querydsl:querydsl-jpa:${queryDslVersion}"
     implementation "com.querydsl:querydsl-apt:${queryDslVersion}"
-
+    implementation "org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE"
 }
 
 tasks.named('test') {
