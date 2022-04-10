@@ -20,6 +20,6 @@ public class Reply extends BaseEntity {
 
     private String replyer; // 회원이 아닌 사람도 작성 가능
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private Board board;    // 연관관계 지정
 }
