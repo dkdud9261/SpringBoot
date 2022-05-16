@@ -30,6 +30,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.6'
     runtimeOnly 'mysql:mysql-connector-java:8.0.28'
     implementation "org.thymeleaf.extras:thymeleaf-extras-java8time:3.0.4.RELEASE"
+    implementation group: 'net.coobird', name: 'thumbnailator', version: '0.4.12'
 }
 
 tasks.named('test') {

@@ -40,4 +40,5 @@ public class ReviewRepositoryTests {
             System.out.println(movieReview.getReviewnum()+"\t"+movieReview.getGrade()+"\t"+movieReview.getText()+"\t"+movieReview.getMember().getEmail()+"----------------------------");
         });
     }
+
 }
