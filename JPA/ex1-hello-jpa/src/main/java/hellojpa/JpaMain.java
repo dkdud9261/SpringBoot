@@ -8,19 +8,6 @@ import java.util.List;
 
 public class JpaMain {
 
-    /*  < 정리 >
-        JPA는 항상 EntityManagerFactory를 만들어야 한다.
-        EntityManagerFactory는 디비 당 하나씩 묶여서 돌아간다.
-        설정 파일(persistence.xml)의 설정 정보를 읽어와서 만든다.
-
-        고객의 요청으로 디비 작업이 필요할 때마다 EntityManager를 통해서 작업해야 한다.
-        모든 데이터베이스의 변경은 transaction 안에서 처리해야 한다.
-        commit을 꼭 해줘야 반영이 된다.
-        작업이 끝나면 EntityManager를 꼭 닫아줘야 한다.
-        애플리케이션이 끝날 때 EntityManagerFactory를 닫아줘야 한다. => 내부적으로 resource release
-
-    */
-
     public static void main(String[] args) {
         // 디비 당 하나만 생성
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
