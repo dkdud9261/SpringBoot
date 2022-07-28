@@ -31,11 +31,10 @@ public class JpaMain {
             // JPA는 테이블이 아닌 엔티티 객체를 대상으로 쿼리를 짠다. (객체지향 쿼리언어 JPQL)
             // 아래 코드는 Member 테이블의 모든 컬럼을 가져오는 것이 아니라
             // Member 객체를 모두 가져오라는 것을 의미.
-            List<Member> result = em.createQuery("select m from Member as m", Member.class)
-                    .setFirstResult(0)
-                    .setMaxResults(1)
-                    .getResultList();
-            for (Member member : result) System.out.println(member.getName());
+//            List<Member> result = em.createQuery("select m from Member as m", Member.class)
+//                    .setFirstResult(0)
+//                    .setMaxResults(1)
+//                    .getResultList();
 
             // [ 검색 쿼리 ]
             // 검색을 할 때도 테이블이 아닌 엔티티 객체를 대상으로 검색한다.
